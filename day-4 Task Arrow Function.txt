@@ -1,0 +1,32 @@
+1.const array = [1, 2, 3, 4, 5];
+
+const oddNumbers = array.filter((number) => number % 2 !== 0);
+
+console.log(oddNumbers); 
+-----------------------------------------------------------------------
+2.var toTitleCase=(str)=>str.replace(txt=>txt.charAt(0).toUpperCase()+txt.slice(1).toLowerCase());
+console.log(toTitleCase);
+--------------------------------------------------------------------------------------------------
+3. sum = (a, b) => {
+  return(a+b)
+}
+  x= sum(34,87)
+  console.log(x)
+---------------------------------------------------------------------------
+4.const getPrimeNumbers = array => {
+  return array.filter(number => {
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+      if (number % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  });
+};
+-------------------------------------------------------------------------------
+5.const getAllPalindromes = (array) => {
+  return array.filter((element) => {
+    const reversedElement = element.split("").reverse().join("");
+    return element === reversedElement;
+  });
+};
